@@ -1,5 +1,6 @@
 <template>
   <div id="sidebar">
+    <Avatar />
     <div class="icons">
       <router-link to="/note/1" title="笔记"><i class="iconfont icon-note"></i></router-link>
       <router-link to="/notebooks" title="笔记本"><i class="iconfont icon-notebook"></i></router-link>
@@ -12,8 +13,12 @@
 </template>
 
 <script>
-export default {
+import Avatar from '@/components/Avatar'
 
+export default {
+  components: {
+    Avatar
+  }
 }
 </script>
 
@@ -45,8 +50,8 @@ export default {
   cursor: pointer;
 }
 
-.iconfont {
-  /*视频六的新增sidebar组件里面这样写，但我加上后变白了*/
-  /* color: #fff; */
-}
+/*视频六的新增sidebar组件里面这样写，但我加上后变白了*/
+/* .iconfont {
+  color: #fff;
+} */
 </style>
